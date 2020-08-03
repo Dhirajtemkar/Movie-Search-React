@@ -2,10 +2,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.pageTitle {
-    color: orange;
-}
-
 .font-xl {
     font-size: 48px;
     font-style: italic;
