@@ -9,17 +9,10 @@ class MovieSearch extends Component {
     constructor(props) {
         super(props)
 
-        // var listEle = []
         this.state = {
             movieRows: [],
             search: ''
         }
-
-        // this.state.movies.forEach((movie) => {
-        //     //Create the movie list here and push it to listEle
-        //     const movieList = <MovieRow movie={movie} />
-        //     listEle.push(movieList)
-        // });
 
         this.performSearch("")
     }
@@ -32,9 +25,7 @@ class MovieSearch extends Component {
             success: (searchResults) => {
                 // console.log(searchResults)
                 const results = searchResults.results
-
                 var listEle = []
-
                 results.forEach((movies) => {
                     movies.poster_src = "https://image.tmdb.org/t/p/w185/" + movies.poster_path 
                     const movie = <MovieRow key={movies.id} movie={movies} />
@@ -72,13 +63,15 @@ class MovieSearch extends Component {
 
     render() {
         return (
-            <div>
+            <div className="mainArea">
                 <div className="topBar" >
                     <img src= {spider} alt="logoAlt"></img>
                     <input type="text" placeholder="Enter a Movie Name" name= {this.state.search} onChange={this.renderSearchTit} className="searchBar" ></input>
                     <button type="submit" className="searchBtn" >Search</button>
                 </div>
-                {this.renderSearchRes()}
+                <div >
+                    {this.renderSearchRes()}    
+                </div>
             </div>
         )
     }

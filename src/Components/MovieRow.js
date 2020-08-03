@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class MovieRow extends Component {
 
     moreInfo() {
-        console.log(this.props.movie.title)
+        // console.log(this.props.movie.title)
         const url = "https://www.themoviedb.org/movie/" + this.props.movie.id
         window.location.href = url
     }
