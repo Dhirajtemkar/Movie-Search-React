@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pageTitle {
+    color: orange;
+}
+
+.font-xl {
+    font-size: 48px;
+    font-style: italic;
+}
+
+.topBar {
+    width: 100%;
+    height: 15vh;
+    background: green;
+    display: flex;
+
+}
+.topBar img {
+    width: 12vh;
+    margin-left: 1vh;
+    padding-right: 10vh;
+}
+.searchBar {
+    width: 65%;
+    height: 5vh;
+    padding-left: 1.5vh;
+    margin: auto;
+    border-radius: 7px;
+    border: 2px solid white;
+    font-size: 16px;
+}
+.searchBtn {
+    width: 20vh;
+    height: 6vh;
+    margin: auto;
+    background: none;
+    color: white;
+    margin-left: -5vh;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 550;
+    /* margin-right: 3vh; */
+    cursor: pointer;
+}
+.searchBtn:hover {
+    background: rgba(255, 255, 255, 0.192);
+}
+
+table {
+    width: 65%;
+    margin: auto;
+    margin-top: 3vh;
+    padding: 3vh;
+    /* border: 1px solid black; */
+    background: rgb(245, 245, 245);
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+td img {
+    width: 20vh;
+}
+td h3 {
+    width: 85%;
+    text-align: justify;
+    margin: auto;
+    margin-top: -2vh;
+    font-size: 24px;
+    margin-bottom: 2vh;
+}
+td p {
+    text-align: justify;
+    width: 85%;
+    margin: auto;
+    font-size: 14px;
+    margin-bottom: 3vh;
+}
+
+table tr td div {
+    width: 85%;
+    /* margin: auto; */
+    /* border: 1px solid black; */
+    display: flex;
+}
+table tr td div a {
+    width: 30%;
+    margin: auto;
+    height: 5vh;
+    line-height: 5vh;
+}
+.moreBtn {
+    border: 2px solid green;
+    background: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: green;
+    cursor: pointer;
+    transition: 0.35s ease-in-out;
+}
+table tr td div a button {
+    width: 100%;
+    background: none;
+    border: none;
+    height: 100%;
+}
+.moreBtn:hover {
+    background: rgba(0, 128, 0, 0.778);
+    color: white;
+    border: 2px solid rgba(0, 128, 0, 0.678);
+}
+.trailerBtn {
+    background: #dddddd;
+    border: none;
+    color: #e84a5f;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.35s ease-in-out;
+}
+
+.trailerBtn:hover {
+    background: #e84a5f;
+    color: white;
+}
+
+
+.sorryMessage {
+    color: green;
+    margin-top: 10vh;
+    font-size: 36px;
+    font-weight: 500;
+}
